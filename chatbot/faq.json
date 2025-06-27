@@ -1,5 +1,6 @@
 {
   "hola": "¡Hola! ¿En qué puedo ayudarte?",
+  "/preguntas": "Preguntas que podés hacerme:\n- qué herramientas hay\n- para qué sirve RescueHub\n- qué es AppGanTT v1\n- qué es AppGanTT v2\n- qué es DP Reuniones App\n- qué es Monitor de Consumo",
   "cómo descargo": "Hacelo desde nuestra web. Buscá la herramienta que quieras, hacé clic en “Descargar” y luego ejecutala.",
   "qué herramientas hay": "Tenemos herramientas de limpieza, optimización, recuperación, gestión de proyectos y monitoreo en tiempo real.",
   "para qué sirve RescueHub": "Sirve para liberar espacio, borrar rastros, limpiar el sistema y mejorar el rendimiento general en Linux.",
@@ -27,3 +28,4 @@
   "chau": "¡Hasta luego! Que tengas un buen día.",
   "adiós": "¡Hasta luego! Que tengas un buen día."
 }
+
