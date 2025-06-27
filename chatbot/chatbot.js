@@ -1,5 +1,5 @@
 
-fetch("faq.json")
+fetch("chatbot/faq.json")
   .then(res => res.json())
   .then(data => {
     const respuestas = data;
