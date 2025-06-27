@@ -14,29 +14,31 @@ fetch("chatbot/faq.json")
 
     document.getElementById("chat-form").addEventListener("submit", function (e) {
       e.preventDefault();
-      const texto = input.value.trim();
-      if (!texto) return;
+    const texto = input.value.trim();
+if (!texto) return;
 
-      agregarMensaje("Tú: " + texto, "usuario");
+agregarMensaje("Tú: " + texto, "usuario");
 
-      const clave = texto.toLowerCase();
-      let respuesta = "No entendí eso. ¿Podés preguntar de otra forma?";
+const clave = texto.toLowerCase();
 
-      if (clave === "/preguntas") {
-        respuesta = respuestas["/preguntas"];
-      } else {
-        Object.keys(respuestas).forEach(p => {
-          if (clave.includes(p)) {
-            respuesta = respuestas[p];
-          }
-        });
-      }
+let respuesta = "No entendí eso. ¿Podés preguntar de otra forma?";
 
-      setTimeout(() => {
-        agregarMensaje("IA: " + respuesta, "bot");
-      }, 500);
+if (clave === "/preguntas") {
+  respuesta = respuestas["/preguntas"];
+} else {
+  Object.keys(respuestas).forEach(p => {
+    if (clave.includes(p)) {
+      respuesta = respuestas[p];
+    }
+  });
+}
 
-      input.value = "";
+setTimeout(() => {
+  agregarMensaje("IA: " + respuesta, "bot");
+}, 500);
+
+input.value = "";
+
     });
 
     document.getElementById("chat-toggle").addEventListener("click", () => {
